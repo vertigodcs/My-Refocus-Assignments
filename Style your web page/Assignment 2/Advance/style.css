@@ -1,0 +1,18 @@
+div{
+    width: 400px;
+    height: 400px;
+    border-color:gray;
+    border-style: solid;
+    padding: 16px;
+    
+}
+
+h1{
+    margin: 10px 5px 10px 5px;
+}
+
+p{
+    color: black;
+    padding: 6px 16px 6px 16px;
+}
+
