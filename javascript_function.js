@@ -16,26 +16,29 @@ function showData(obj){
     console.log(`The product is: ${obj.product}`);
     console.log(`The quotient is: ${obj.quotient}`);
 }
-function add(num1, num2){
+
+const myFunction = {
+ add : function (num1, num2){
     return num1 + num2;
-}
-function subtract(num1, num2){
+},
+subtract: function (num1, num2){
     return num1 - num2;
-}
-function multiply(num1, num2){
+},
+multiply: function (num1, num2){
     return num1 * num2;
-}
-function divide(num1, num2){
+},
+divide: function (num1, num2){
     return num1 / num2;
 }
+};
 
 function newSetOfNumber(num1, num2){
     obj.num1 = num1;
     obj.num2 = num2;
-    obj.sum = add(num1,num2);
-    obj.difference = subtract(num1,num2);
-    obj.product = multiply(num1,num2);
-    obj.quotient = divide(num1,num2);
+    obj.sum = myFunction.add(num1,num2);
+    obj.difference = myFunction.subtract(num1,num2);
+    obj.product = myFunction.multiply(num1,num2);
+    obj.quotient = myFunction.divide(num1,num2);
 }
 showData(obj);
 newSetOfNumber(200, 10);
@@ -46,7 +49,10 @@ showData(obj);
 
 
 //Manual Testing 
-console.log(add(1,2));
-console.log(subtract(1,2));
-console.log(multiply(1,2));
-console.log(divide(1,2));
+console.log(myFunction.add(1,2));
+console.log(myFunction.subtract(1,2));
+console.log(myFunction.multiply(1,2));
+console.log(myFunction.divide(1,2));
+
+module.exports = myFunction;
+
