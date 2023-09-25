@@ -42,3 +42,11 @@ newSetOfNumber(200, 10);
 showData(obj);
 newSetOfNumber(500, 20);
 showData(obj);
+
+
+
+//Manual Testing 
+console.log(add(1,2));
+console.log(subtract(1,2));
+console.log(multiply(1,2));
+console.log(divide(1,2));
